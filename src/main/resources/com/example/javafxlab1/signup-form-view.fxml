@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javafxlab1.SignupFormController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <!--    on button click text-->
+    <Label fx:id="welcomeText" />
+
+    <!--    create login form-->
+    <Label text="Fullname" layoutX="120" layoutY="150" />
+    <TextField fx:id="fullname"  layoutX="120" layoutY="170" />
+    <Label text="Username" layoutX="120" layoutY="200" />
+    <TextField fx:id="username"  layoutX="120" layoutY="220" />
+    <Label text="Password" layoutX="120" layoutY="250" />
+    <PasswordField fx:id="password" layoutX="120" layoutY="270" />
+    <Label text="Confirm password" layoutX="120" layoutY="300" />
+    <PasswordField fx:id="confirmPassword" layoutX="120" layoutY="330" />
+
+    <!--    sign up button-->
+    <Button fx:id="signup" layoutX="120" layoutY="360" onAction="#onSignUpButtonClick" text="Sign Up" />
+
+</AnchorPane>

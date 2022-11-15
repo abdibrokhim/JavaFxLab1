@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="500" prefWidth="500"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      fx:controller="com.example.javafxlab1.SignInFormController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!--    on button click text-->
+    <Label fx:id="welcomeText" />
+
+    <!--    create login form-->
+    <Label text="Username" layoutX="120" layoutY="150" />
+    <TextField fx:id="username"  layoutX="120" layoutY="170" />
+    <Label text="Password" layoutX="120" layoutY="200" />
+    <PasswordField fx:id="password" layoutX="120" layoutY="220" />
+
+    <Button fx:id="signin" layoutX="120" layoutY="300" onAction="#onLoginButtonClick" text="Sign In" />
+
+    <!--    reset password button-->
+    <Button fx:id="resetpsswd" layoutX="120" layoutY="330" onAction="#onResetPasswordButtonClick" text="Reset Password" />
+
+<!--        sign up button-->
+    <Button fx:id="signup" layoutX="120" layoutY="360" onAction="#onSignUpButtonClick" text="Sign Up" />
+
+</Pane>
